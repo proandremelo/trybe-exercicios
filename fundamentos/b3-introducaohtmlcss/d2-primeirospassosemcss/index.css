@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 65px;
+    color: orange;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: orange;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    background-color: black;
+}
+
+ul {
+    background-color: black;
+}
+
+li {
+    line-height: 2em;
+    text-decoration: overline underline dashed;
+    background-color: black;
+}
+
+.peul {
+    background-color: black;
+}
