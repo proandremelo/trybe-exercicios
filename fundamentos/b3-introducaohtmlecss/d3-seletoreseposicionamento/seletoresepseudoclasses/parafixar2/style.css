@@ -1,0 +1,19 @@
+div h3:hover:nth-child(1) {
+    border: 2px solid red;
+}
+
+div h3:hover:nth-child(2) {
+    border: 2px solid yellow;
+}
+
+h3:hover:nth-child(3) {
+    border: 2px solid blue;
+}
+
+h3:hover:nth-child(4) {
+    border: 2px solid darkgreen;
+}
+
+h3:hover:nth-child(5) {
+    border: 2px solid lightgreen;
+}
