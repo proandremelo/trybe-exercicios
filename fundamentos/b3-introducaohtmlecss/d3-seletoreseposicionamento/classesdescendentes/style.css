@@ -1,0 +1,69 @@
+/********************** 1 *************************/
+
+ol {
+    background-color: yellow;
+}
+
+ol li:nth-of-type(2n){
+    color: green;
+}
+
+ol li:nth-of-type(2n+1){
+    text-transform: uppercase;
+}
+
+/********************** 2 *************************/
+
+.italicoup{
+    color: red;
+}
+
+.italicoup em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+/********************** 3 *************************/
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+/********************** 4 *************************/
+
+.linguagemazul{
+    color: blue;
+}
+
+.linguagemazul.java{
+    background-color: pink;
+}
+
+/********************** 5 *************************/
+
+.maiores-aliados li:hover:nth-of-type(0n+1){
+    font-weight: bold;
+    background-color: orange;
+}
+
+.maiores-aliados li:hover:nth-of-type(0n+2){
+    font-weight: bold;
+    background-color: green;
+}
+.maiores-aliados li:hover:nth-of-type(0n+3){
+    font-weight: bold;
+    background-color: black;
+}
+
+.maiores-aliados li:hover:nth-of-type(0n+4){
+    font-weight: bold;
+    background-color: yellow;
+}
+.maiores-aliados li:hover:nth-of-type(0n+5){
+    font-weight: bold;
+    background-color: green;
+}
