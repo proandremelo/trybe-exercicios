@@ -1,19 +1,19 @@
-div h3:hover:nth-child(1) {
+div:hover:nth-of-type(0n+1) {
     border: 2px solid red;
 }
 
-div h3:hover:nth-child(2) {
+div:hover:nth-of-type(0n+2) {
     border: 2px solid yellow;
 }
 
-h3:hover:nth-child(3) {
+div:hover:nth-of-type(0n+3) {
     border: 2px solid blue;
 }
 
-h3:hover:nth-child(4) {
+div:hover:nth-of-type(0n+4) {
     border: 2px solid darkgreen;
 }
 
-h3:hover:nth-child(5) {
+div:hover:nth-of-type(0n+5) {
     border: 2px solid lightgreen;
 }
