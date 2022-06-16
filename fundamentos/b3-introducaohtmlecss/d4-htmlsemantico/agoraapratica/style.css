@@ -1,0 +1,51 @@
+.centered{
+    text-align: center;
+}
+
+#cientifica{
+    height: 15em;
+    width: 13.5em;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+header, nav {
+    display: inline-block;
+    margin-left: 20em;
+}
+
+nav ul {
+    margin-left: 7em;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 2em;
+}
+
+aside {
+    float: right;
+}
+
+article {
+    margin-left: 15%;
+    width: 70%;
+}
+
+table{
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+table th, table td{
+    text-align: center;
+    border: 1px solid black;
+}
+
+table tr{
+    height: 1.85em;
+}
