@@ -1,9 +1,20 @@
 //////////////////// 1 ////////////////////
 
-let resultado = 10;
+// let resultado = 10;
 
-for (let index = 10; index > 1; index--) {
-    resultado *= index-1;
-}
+// for (let index = 10; index > 1; index--) {
+//     resultado *= index-1;
+// }
 
-console.log(resultado);
+// console.log(resultado);
+
+
+//////////////////// 2 ////////////////////
+
+
+
+//////////////////// 3 ////////////////////
+
+
+
+//////////////////// 4 ////////////////////
