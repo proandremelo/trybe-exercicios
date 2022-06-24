@@ -15,13 +15,19 @@
 
 //////////////// 2 //////////////
 
-function indexOfMaxValue(array){
-    return array.indexOf(Math.max(...array));
-}
+// function indexOfMaxValue(array){
+//     return array.indexOf(Math.max(...array));
+// }
 
-console.log(indexOfMaxValue([2, 3, 6, 47, 10, 1]));
+// console.log(indexOfMaxValue([2, 3, 6, 47, 10, 1]));
 
 //////////////// 3 //////////////
+
+function indexOfMinValue(array){
+    return array.indexOf(Math.min(...array));
+}
+
+console.log(indexOfMinValue([2, -3, 6, 47, 10, 1]));
 
 //////////////// 4 //////////////
 
