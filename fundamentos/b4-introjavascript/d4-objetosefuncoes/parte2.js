@@ -23,13 +23,23 @@
 
 //////////////// 3 //////////////
 
-function indexOfMinValue(array){
-    return array.indexOf(Math.min(...array));
-}
+// function indexOfMinValue(array){
+//     return array.indexOf(Math.min(...array));
+// }
 
-console.log(indexOfMinValue([2, -3, 6, 47, 10, 1]));
+// console.log(indexOfMinValue([2, -3, 6, 47, 10, 1]));
 
 //////////////// 4 //////////////
+
+function nameMaxLength(names){
+    let namesLength = [];
+    for (const name of names) {
+        namesLength.push(name.length);
+    }
+    return names[namesLength.indexOf(Math.max(...namesLength))];
+}
+
+console.log(nameMaxLength(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
 //////////////// 5 //////////////
 
