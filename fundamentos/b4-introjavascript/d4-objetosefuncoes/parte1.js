@@ -1,0 +1,36 @@
+let info = {
+  personagem: "Margarida",
+  origem: "Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  recorrente: "Sim",
+};
+
+///////////////// 1 //////////////////
+
+// console.log('Bem Vinda, ' + info.personagem );
+
+///////////////// 2 //////////////////
+
+// console.log(info);
+
+///////////////// 3 //////////////////
+
+// for (const key in info) {
+//   console.log(key);
+// }
+
+///////////////// 4 //////////////////
+
+// for (const key in info) {
+//   console.log(info[key]);
+// }
+
+///////////////// 5 //////////////////
+
+
+
+///////////////// 6 //////////////////
+
+///////////////// 7 //////////////////
+
+///////////////// 8 //////////////////
