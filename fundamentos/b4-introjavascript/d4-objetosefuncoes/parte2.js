@@ -59,19 +59,25 @@
 
 //////////////// 6 //////////////
 
-function somaAte(numero){
-    if (!Number.isInteger(numero)) {
-        return 'Insira um número inteiro'
-    }
+// function somaAte(numero){
+//     if (!Number.isInteger(numero)) {
+//         return 'Insira um número inteiro'
+//     }
 
-    let somatorio = 0;
+//     let somatorio = 0;
 
-    for (let index = 1; index <= numero; index++) {
-        somatorio += index;
-    }
-    return somatorio;
-}
+//     for (let index = 1; index <= numero; index++) {
+//         somatorio += index;
+//     }
+//     return somatorio;
+// }
 
-console.log(somaAte(5));
+// console.log(somaAte(5));
 
 //////////////// 7 //////////////
+
+// function verificaFimPalavra(word, ending){
+//     return word.endsWith(ending);
+// }
+
+// console.log(verificaFimPalavra('adada', 'da'));
