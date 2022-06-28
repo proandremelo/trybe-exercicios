@@ -31,17 +31,31 @@
 
 //////////////// 4 //////////////
 
-function nameMaxLength(names){
-    let namesLength = [];
-    for (const name of names) {
-        namesLength.push(name.length);
-    }
-    return names[namesLength.indexOf(Math.max(...namesLength))];
-}
+// function nameMaxLength(names){
+//     let namesLength = [];
+//     for (const name of names) {
+//         namesLength.push(name.length);
+//     }
+//     return names[namesLength.indexOf(Math.max(...namesLength))];
+// }
 
-console.log(nameMaxLength(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+// console.log(nameMaxLength(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
 //////////////// 5 //////////////
+
+function inteiroQueMaisRepete(array){
+    let vezesQueAparecem = [];
+    for (let number of array) {
+        let count = 1;
+        for (const otherNumber of array) {
+            if(otherNumber === number){
+                count++;
+            }
+        }
+        vezesQueAparecem.push(count);
+    }
+    return array[vezesQueAparecem.indexOf(Math.max(...vezesQueAparecem))];
+}
 
 //////////////// 6 //////////////
 
