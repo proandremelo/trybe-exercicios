@@ -43,20 +43,35 @@
 
 //////////////// 5 //////////////
 
-function inteiroQueMaisRepete(array){
-    let vezesQueAparecem = [];
-    for (let number of array) {
-        let count = 1;
-        for (const otherNumber of array) {
-            if(otherNumber === number){
-                count++;
-            }
-        }
-        vezesQueAparecem.push(count);
-    }
-    return array[vezesQueAparecem.indexOf(Math.max(...vezesQueAparecem))];
-}
+// function inteiroQueMaisRepete(array){
+//     let vezesQueAparecem = [];
+//     for (let number of array) {
+//         let count = 1;
+//         for (const otherNumber of array) {
+//             if(otherNumber === number){
+//                 count++;
+//             }
+//         }
+//         vezesQueAparecem.push(count);
+//     }
+//     return array[vezesQueAparecem.indexOf(Math.max(...vezesQueAparecem))];
+// }
 
 //////////////// 6 //////////////
+
+function somaAte(numero){
+    if (!Number.isInteger(numero)) {
+        return 'Insira um número inteiro'
+    }
+
+    let somatorio = 0;
+
+    for (let index = 1; index <= numero; index++) {
+        somatorio += index;
+    }
+    return somatorio;
+}
+
+console.log(somaAte(5));
 
 //////////////// 7 //////////////
