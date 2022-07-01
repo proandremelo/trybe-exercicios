@@ -110,6 +110,29 @@
         tagMain.appendChild(h3);        
       }
       
+      ///////////// Segunda Etapa //////////////
+
+      /// 1 ///
+      tagH1.className = 'title';
+
+      /// 2 ///
+      for (const li of document.querySelectorAll('h3')) {
+        li.className = 'description';
+      }
+
+      /// 3 ///
+      tagMain.removeChild(tagSection2);
+
+      /// 4 ///
+      tagSection3.style.marginRight = 'auto';
+
+      /// 5 ///
+      tagSection.parentNode.style.backgroundColor = 'green';
+
+      /// 6 ///
+      listaNumeros.lastElementChild.remove();
+      listaNumeros.lastElementChild.remove();
+
     </script>
   </body>
 </html>
