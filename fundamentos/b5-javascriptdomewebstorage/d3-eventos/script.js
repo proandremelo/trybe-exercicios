@@ -64,14 +64,46 @@ function mudaFundoHoliday(color) {
   }
 }
 
-let turn = 0;
+let turnBtnHoliday = 0;
 document.querySelector("#btn-holiday").addEventListener("click", function () {
-  if (turn % 2 == 0) {
+  if (turnBtnHoliday % 2 == 0) {
     mudaFundoHoliday("rgb(255,64,83)");
   } else {
     mudaFundoHoliday("rgb(238,238,238)");
   }
-  turn++;
+  turnBtnHoliday++;
 });
 
 /// 4 ///
+function criaBotaoSextaFeira(sextaFeira) {
+  let btnSexta = document.createElement("button");
+  btnSexta.id = "btn-friday";
+  btnSexta.innerText = sextaFeira;
+  document.querySelector(".buttons-container").appendChild(btnSexta);
+}
+
+criaBotaoSextaFeira("Sexta-Feira");
+
+/// 5 ///
+function modificaTextoSexta(sextaFeira) {
+  let days = document.querySelector("#days").children;
+  for (let index = 5; index <= 26; index += 7) {
+    if (sextaFeira) {
+      days[index].innerText = "Sexta-Feira";
+    } else {
+      days[index].innerText = index - 1;
+    }
+  }
+}
+
+let turnBtnFriday = 0;
+document.querySelector("#btn-friday").addEventListener("click", function () {
+  if (turnBtnFriday % 2 == 0) {
+    modificaTextoSexta(true);
+  } else {
+    modificaTextoSexta(false);
+  }
+  turnBtnFriday++;
+});
+
+/// 6 ///
