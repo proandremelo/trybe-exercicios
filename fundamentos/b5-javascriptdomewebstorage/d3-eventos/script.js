@@ -170,10 +170,4 @@ function atribuiCorTarefa(evt){
     evt.target.style.color = '#777';
   }
   
-  // if (turnClickDay % 2 == 0) {
-  //   evt.target.style.color = document.querySelector(".selected").style.backgroundColor;
-  // } else{
-  //   evt.target.style.color = 'rgb(119,119,119)';
-  // }
-  // turnClickDay++;
 }
