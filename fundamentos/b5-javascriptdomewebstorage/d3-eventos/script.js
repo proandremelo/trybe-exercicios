@@ -107,3 +107,35 @@ document.querySelector("#btn-friday").addEventListener("click", function () {
 });
 
 /// 6 ///
+let elementDays = document.querySelectorAll(".day");
+for (const day of elementDays) {
+  day.addEventListener("mouseover", zoomIn);
+  day.addEventListener("mouseout", zoomOut);
+}
+
+function zoomIn(evt) {
+  evt.target.style.fontSize = "150%";
+}
+
+function zoomOut(evt) {
+  evt.target.style.fontSize = "100%";
+}
+
+/// 7 ///
+function adcionarTarefa(tarefa){
+  let elementoTarefa = document.createElement('span');
+  elementoTarefa.innerText = tarefa;
+  document.querySelector('.my-tasks').appendChild(elementoTarefa);
+}
+
+adcionarTarefa("cozinhar");
+
+/// 8 ///
+function adicionarLegenda(cor){
+  let legenda = document.createElement('div');
+  legenda.style.backgroundColor = cor;
+  document.querySelector('.my-tasks').appendChild(legenda);
+  
+}
+
+adicionarLegenda('blue');
