@@ -1,0 +1,44 @@
+body {
+  margin: 0 15em;
+}
+
+h1 {
+  text-align: center;
+}
+
+#preferences div {
+  display: block;
+  margin: 0.7em 0 0.7em 4em;
+}
+
+#cor-de-fundo {
+  margin-right: 3.5em;
+}
+
+#cor-de-fundo input {
+  margin-left: 4em;
+}
+
+#tamanho-fonte {
+  margin-right: 3.6em;
+}
+
+#tamanho-fonte input {
+  margin-left: 1.05em;
+}
+
+#espacamento input{
+margin-left: 1em;
+}
+
+#cor-do-texto input{
+    margin-left: 1.3em;
+}
+
+#tipo-fonte input{
+    margin-left: 0.65em;
+}
+
+#aplicar{
+    margin-left: 1em;
+}
