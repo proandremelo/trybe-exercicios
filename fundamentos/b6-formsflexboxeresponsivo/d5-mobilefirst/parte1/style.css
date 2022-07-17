@@ -13,12 +13,15 @@ html {
 }
 
 body {
+  font-size: larger;
+  margin: 1.5em;
 }
 
 article {
 }
 
 h1 {
+  font-size: 2em;
 }
 
 h2 {
@@ -35,7 +38,7 @@ section {
 }
 
 figure {
-  margin: 0;
+  margin: 2em 0;
 }
 
 figcaption {
