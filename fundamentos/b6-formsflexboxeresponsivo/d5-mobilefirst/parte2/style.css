@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 1em;
+    background-color: rgb(235, 205, 74);
+  }
+  header p {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
