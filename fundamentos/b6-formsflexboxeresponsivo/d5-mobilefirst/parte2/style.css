@@ -12,6 +12,18 @@ html {
   body {
     margin: 1em;
     background-color: rgb(235, 205, 74);
+    font-size: 1em;
+  }
+  header p {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  body {
+    margin: 1em;
+    background-color: rgb(159, 240, 148);
   }
   header p {
     font-size: 2em;
