@@ -52,6 +52,17 @@ figcaption {
     margin: 1em;
   }
 
+  section{
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 600px;
+  }
+
+  img{
+    height: 200px;
+    width: 140px;
+  }
+
   main section{
     
   }
