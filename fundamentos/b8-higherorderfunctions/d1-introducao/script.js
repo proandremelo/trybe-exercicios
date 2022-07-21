@@ -16,3 +16,24 @@ const novoEmpregadoContratado = (nome) => {
 };
 
 console.log(newEmployees(novoEmpregadoContratado));;
+
+//////// 2 ////////
+
+const resultadoSorteio = (numeroApostado, callback) => {
+    const numeroSorteado = Math.round((Math.random() * 4)) + 1;
+    console.log(numeroSorteado);
+    if(callback(numeroSorteado, numeroApostado)){
+        return 'Parabéns, você ganhou!';
+    }
+    return 'Tente Novamente';
+}
+
+const checkAposta = (n1, n2) => {
+    if (n1 === n2) {
+        return true;
+    } 
+    return false;
+}
+
+console.log(resultadoSorteio(3, checkAposta));
+
