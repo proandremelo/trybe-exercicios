@@ -37,3 +37,28 @@ const checkAposta = (n1, n2) => {
 
 console.log(resultadoSorteio(3, checkAposta));
 
+///// 3 /////
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const checkNota = (rightAnswers, studentAnswers, callback) => {
+    let nota = 0;
+    rightAnswers.forEach((element, index) => {
+        nota += callback(element, studentAnswers[index]);
+    });
+    if(nota < 0) return 0;
+    return nota;
+};
+
+const checkResposta = (n1, n2) => {
+    if (n1 === n2) {
+        return 1;
+    }
+    if (n2 === 'N.A') {
+        return 0;
+    }
+    return -0.5;
+}
+
+console.log(checkNota(RIGHT_ANSWERS, STUDENT_ANSWERS, checkResposta));
