@@ -1,5 +1,5 @@
 // Verifique se a importação do arquivo correto está sendo feita.
-const { getPokemonDetails } = require('./exercicio8');
+const getPokemonDetails = require('./exercicio8');
 
 
 describe('A função getPokemonDetails', (done) => {
@@ -14,7 +14,7 @@ describe('A função getPokemonDetails', (done) => {
     //     getPokemonDetails('asdasd', callback);
     // });
 
-  it('retorna um pokémon que existe no banco de dados', () => {
+  it('retorna um pokémon que existe no banco de dados', (done) => {
     const expectedString = 'Olá, seu pokémon é o Charmander, o tipo dele é Fogo e a habilidade principal dele é Lança Chamas';
     function callback(error, message){
       if (message) {
