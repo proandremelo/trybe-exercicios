@@ -1,17 +1,11 @@
-import React, { useState } from "react";
-
-const INITIAL_STATE = {
-  nome: '',
-  idade: 0,
-  cidade: '',
-  modulo: 'fund',
-}
+import React, { useContext } from "react";
+import FormContext from "../context/FormContext";
 
 const Form = () => {
-  const [form, setForm] = useState(INITIAL_STATE);
+  const { form, handleChange, addStudent } = useContext(FormContext);
 
-  const handleChange = ({ target }) => {
-    setForm({ ...form, [target.name]: target.value });
+  const handleClick = () => {
+    addStudent(form);
   };
 
   return (
@@ -20,7 +14,7 @@ const Form = () => {
         type="text"
         placeholder="Nome"
         name="nome"
-        value={form.name}
+        value={form.nome}
         onChange={handleChange}
       />
       <input
@@ -44,8 +38,8 @@ const Form = () => {
             type="radio"
             name="modulo"
             id="fund"
-            value="fund"
-            checked={ form.modulo === 'fund'}
+            value="Fundamentos"
+            checked={ form.modulo === 'Fundamentos'}
             onChange={handleChange}
           />
           Fundamentos
@@ -55,8 +49,8 @@ const Form = () => {
             type="radio"
             name="modulo"
             id="front"
-            value="front"
-            checked={ form.modulo === 'front'}
+            value="Front-End"
+            checked={ form.modulo === 'Front-End'}
             onChange={handleChange}
           />
           Front-End
@@ -66,8 +60,8 @@ const Form = () => {
             type="radio"
             name="modulo"
             id="back"
-            value="back"
-            checked={ form.modulo === 'back'}
+            value="Back-End"
+            checked={ form.modulo === 'Back-End'}
             onChange={handleChange}
           />
           Back-End
@@ -77,14 +71,14 @@ const Form = () => {
             type="radio"
             name="modulo"
             id="sc"
-            value="sc"
-            checked={ form.modulo === 'sc'}
+            value="Ciência da Computação"
+            checked={ form.modulo === 'Ciência da Computação'}
             onChange={handleChange}
           />
           Ciência da Computação
         </label>
       </fieldset>
-      <button type="submit">Enviar</button>
+      <button type="button" onClick={handleClick}>Enviar</button>
     </form>
   );
 };

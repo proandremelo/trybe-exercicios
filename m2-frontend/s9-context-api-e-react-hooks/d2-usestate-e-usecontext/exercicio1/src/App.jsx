@@ -1,10 +1,15 @@
 import React from 'react';
 
-import Form from './pages/Form';
+import Form from './components/Form';
+import StudentsList from './components/StudentsList';
+import FormProvider from './context/FormProvider';
 
 function App() {
   return (
-    <Form />
+    <FormProvider>
+      <Form />
+      <StudentsList />
+    </FormProvider>
   );
 }
 
